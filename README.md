@@ -18,7 +18,7 @@
 در n8n در workflow روی import from file این پروژه رو اضافه کنید.
 
 فایل (screenshot.zip) رو دانلود کنید.
-2. 
+
 به Chrome Extensions رفته و Developer mode را فعال کنید.
 
 گزینه Load Unpacked را انتخاب کنید و پوشه اکستنشن را انتخاب کنید.
