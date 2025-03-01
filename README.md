@@ -10,14 +10,12 @@
 
 ## 🎬 ویدیوی آموزشی  
 برای مشاهده نحوه ساخت و استفاده از این اکستنشن، ویدیوی زیر را ببینید:  
-🔗 [لینک ویدیو در یوتیوب](لینک-ویدیو)  
+🔗 [لینک ویدیو در یوتیوب](https://www.youtube.com/watch?v=ZzQOR93VVCU&list=PLVEs0W-dLsDEmO1HwGI4bTTEGoXdiYKHG&index=4)  
 
 ## 🛠️ نصب و راه‌اندازی  
-1. این ریپازیتوری را کلون کنید:  
-```bash
-   git clone https://github.com/username/repo-name.git
-   cd repo-name
-```
+0.فایل جیسون (Tradingview_Extention.json) رو دانلود کنید و در n8n در workflow روی import from file این پروژه رو اضافه کنید.
+
+1. فایل (screenshot.zip) رو دانلود کنید.
 به Chrome Extensions رفته و Developer mode را فعال کنید.
 گزینه Load Unpacked را انتخاب کنید و پوشه اکستنشن را انتخاب کنید.
 روی اکستنشن بزنید و به Setting رفته و URL که در Webhook در n8n دارید رو اینجا قرار دهید.
@@ -27,3 +25,5 @@
 
 📌 نویسنده: Mohammadreza Ranjdoost
 📌 تماس با من در تلگرام: @MR_Ranjdost
+حمایت مالی : 
+TRON: TMVhJoPRsBNumsYnwNDea85pUEcTtQkesm
