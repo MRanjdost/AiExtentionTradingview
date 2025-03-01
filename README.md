@@ -13,13 +13,20 @@
 🔗 [لینک ویدیو در یوتیوب](https://www.youtube.com/watch?v=ZzQOR93VVCU&list=PLVEs0W-dLsDEmO1HwGI4bTTEGoXdiYKHG&index=4)  
 
 ## 🛠️ نصب و راه‌اندازی  
-0.فایل جیسون (Tradingview_Extention.json) رو دانلود کنید و در n8n در workflow روی import from file این پروژه رو اضافه کنید.
+فایل جیسون (Tradingview_Extention.json) رو دانلود کنید 
+
+در n8n در workflow روی import from file این پروژه رو اضافه کنید.
 
 1. فایل (screenshot.zip) رو دانلود کنید.
+2. 
 به Chrome Extensions رفته و Developer mode را فعال کنید.
+
 گزینه Load Unpacked را انتخاب کنید و پوشه اکستنشن را انتخاب کنید.
+
 روی اکستنشن بزنید و به Setting رفته و URL که در Webhook در n8n دارید رو اینجا قرار دهید.
+
 از اکستنشن در TradingView استفاده کنید و تحلیل AI را دریافت کنید!
+
 📜 مجوز
 این پروژه تحت MIT License منتشر شده است.
 
