@@ -23,7 +23,11 @@
 📜 مجوز
 این پروژه تحت MIT License منتشر شده است.
 
+
 📌 نویسنده: Mohammadreza Ranjdoost
+
 📌 تماس با من در تلگرام: @MR_Ranjdost
+
 حمایت مالی : 
+
 TRON: TMVhJoPRsBNumsYnwNDea85pUEcTtQkesm
