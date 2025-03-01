@@ -13,7 +13,7 @@
 🔗 [لینک ویدیو در یوتیوب](https://www.youtube.com/watch?v=ZzQOR93VVCU&list=PLVEs0W-dLsDEmO1HwGI4bTTEGoXdiYKHG&index=4)  
 
 ## 🛠️ نصب و راه‌اندازی  
-فایل جیسون (Tradingview_Extention.json) رو دانلود کنید 
+فایل (Tradingview_Extention.json) رو دانلود کنید 
 
 در n8n در workflow روی import from file این پروژه رو اضافه کنید.
 
