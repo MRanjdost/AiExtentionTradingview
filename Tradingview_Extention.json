@@ -1,0 +1,125 @@
+{
+  "name": "Tradingview Extention",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "84d607fc-bce2-441e-ad7b-a6a0c9701b2a",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -280,
+        -120
+      ],
+      "id": "24ebf499-d3fd-486f-ad39-005c9bfbfa49",
+      "name": "Webhook",
+      "webhookId": "84d607fc-bce2-441e-ad7b-a6a0c9701b2a"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.output }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        280,
+        -120
+      ],
+      "id": "41ae4872-c081-43f6-8049-e558a4cd79af",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $binary.data }}",
+        "options": {
+          "systemMessage": "You are a helpful assistant\nanalyze this picture with technical analyzing method"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -60,
+        -120
+      ],
+      "id": "d8525e9a-9164-43d1-9b59-09eedc47a950",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -60,
+        80
+      ],
+      "id": "e3942b8e-67f1-4ced-9814-1673097e6d16",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "NYonDn3M5C6QIaOU",
+          "name": "OpenAi account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "90fb265f-502e-4695-adb0-c2cfe67348f8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "23ad023ca30b7854004f156ea1b9d2f87ff497512ad5c17503d40982428c705b"
+  },
+  "id": "92TYFcRuD6xCfuMQ",
+  "tags": []
+}
