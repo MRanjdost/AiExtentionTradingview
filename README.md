@@ -17,7 +17,7 @@
 
 در n8n در workflow روی import from file این پروژه رو اضافه کنید.
 
-1. فایل (screenshot.zip) رو دانلود کنید.
+فایل (screenshot.zip) رو دانلود کنید.
 2. 
 به Chrome Extensions رفته و Developer mode را فعال کنید.
 
